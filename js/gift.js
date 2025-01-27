@@ -3,7 +3,7 @@ document.getElementById('yes-btn').addEventListener('click', function () {
   const yesSound = document.getElementById('yes-sound'); // The sound element
 
   // Change the GIF to a new one
-  catGif.src = "https://media.tenor.com/qTqdz1pRW6MAAAAC/party-happy.gif"; // New GIF URL
+  catGif.src = "https://media.tenor.com/XQcsS3Lo-_8AAAAi/seeker-cat-phantom-cat.gif"; // New GIF URL
 
   // Play the sound effect
   yesSound.play();
