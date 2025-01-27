@@ -1,1 +1,131 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fef6e4;
+  margin: 0;
+  padding: 0;
+}
 
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #f7d6bf;
+  padding: 10px;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+nav ul li a.active {
+  background-color: #ff6b6b;
+}
+
+nav ul li a.locked {
+  background-color: gray;
+  pointer-events: none;
+}
+
+#content {
+  margin-top: 50px;
+}
+
+#cat-gif {
+  width: 300px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #4f4f4f;
+}
+
+#buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#yes-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+#no-btn {
+  background-color: #f44336;
+  color: white;
+  position: relative;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Yes button animation */
+#yes-btn:hover {
+  transform: scale(1.2);
+}
+
+#yes-btn:active {
+  transform: scale(1.5);
+}
+
+/* Mobile scaling for the Yes button */
+@media (max-width: 768px) {
+  #yes-btn {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+  }
+  #yes-btn:hover {
+    transform: scale(1.4);
+  }
+}
+
+/* No button movement */
+#no-btn:hover {
+  position: absolute;
+  animation: move-no-btn 0.5s ease-in-out;
+}
+
+/* Keyframes for No button */
+@keyframes move-no-btn {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: -50px;
+    left: 50px;
+  }
+  50% {
+    top: 50px;
+    left: -50px;
+  }
+  75% {
+    top: -50px;
+    left: -50px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
